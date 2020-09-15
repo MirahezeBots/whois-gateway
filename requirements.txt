@@ -1,4 +1,3 @@
-ipwhois==0.13.0
-six
-nose
-requests
+ipwhois==1.1.0
+nose==1.3.7
+requests==2.24.0
