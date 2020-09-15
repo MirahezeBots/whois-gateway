@@ -2,12 +2,10 @@
 import sys
 sys.path.insert(0, '/data/project/whois-referral/venv/lib/python3.5/site-packages')
 
-import six
 from ipwhois import IPWhois, WhoisLookupError
 import cgitb
 import os
 import re
-from six.moves import urllib
 import cgi
 import json
 import requests
