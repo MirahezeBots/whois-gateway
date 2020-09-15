@@ -19,7 +19,7 @@ def get_html(ip, url_quote=True):
 class TestGateway(unittest.TestCase):
 
     def test_arin(self):
-        self.assertEquals(gateway.PROVIDERS['ARIN']('11.22.33.44'), 'http://whois.arin.net/rest/ip/11.22.33.44')
+        self.assertEquals(gateway.PROVIDERS['ARIN']('11.22.33.44'), 'https://whois.arin.net/rest/ip/11.22.33.44')
 
     @mock.patch('gateway.IPWhois')
     def test_lookup(self, MockClass):
