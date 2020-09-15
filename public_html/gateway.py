@@ -17,11 +17,11 @@ SITE = '//tools.wmflabs.org/whois-referral'
 LOGDIR = '/data/project/whois-referral/logs'
 
 PROVIDERS = {
-    'ARIN': lambda x: 'http://whois.arin.net/rest/ip/' + urllib.parse.quote(x),
+    'ARIN': lambda x: 'https://whois.arin.net/rest/ip/' + urllib.parse.quote(x),
     'RIPENCC': lambda x: 'https://apps.db.ripe.net/search/query.html?searchtext=%s#resultsAnchor' % urllib.parse.quote(x),
-    'AFRINIC': lambda x: 'http://afrinic.net/cgi-bin/whois?searchtext=' + urllib.parse.quote(x),
-    'APNIC': lambda x: 'http://wq.apnic.net/apnic-bin/whois.pl?searchtext=' + urllib.parse.quote(x),
-    'LACNIC': lambda x: 'http://lacnic.net/cgi-bin/lacnic/whois?lg=EN&amp;query=' + urllib.parse.quote(x)
+    'AFRINIC': lambda x: 'https://afrinic.net/cgi-bin/whois?searchtext=' + urllib.parse.quote(x),
+    'APNIC': lambda x: 'https://wq.apnic.net/apnic-bin/whois.pl?searchtext=' + urllib.parse.quote(x),
+    'LACNIC': lambda x: 'https://lacnic.net/cgi-bin/lacnic/whois?lg=EN&amp;query=' + urllib.parse.quote(x)
 }
 
 TOOLS = {
