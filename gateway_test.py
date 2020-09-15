@@ -6,9 +6,7 @@ sys.path.insert(0, './public_html')
 import unittest
 import cgi
 import gateway
-import six
 import mock
-from six.moves import urllib
 
 def get_html(ip, url_quote=True):
     if url_quote:
